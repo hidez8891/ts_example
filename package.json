@@ -1,0 +1,22 @@
+{
+  "name": "ts_example",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:typescript": "tsc",
+    "build:pug": "pug -o dist src",
+    "prestart": "npm run build",
+    "start": "electron ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/electron": "^1.4.34",
+    "electron-prebuilt": "^1.4.13",
+    "npm-run-all": "^4.0.2",
+    "typescript": "^2.2.1"
+  }
+}
