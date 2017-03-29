@@ -1,5 +1,6 @@
 # output directory
 dist
+releases
 
 # node modules
 node_modules
