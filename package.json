@@ -9,7 +9,8 @@
     "build:pug": "pug -o dist src",
     "prestart": "npm run build",
     "start": "electron .",
-    "package": "node package.js"
+    "package": "node package.js",
+    "lint": "tslint src/**/*.ts?(x)"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "@types/react-dom": "^0.14.23",
     "electron-packager": "^8.6.0",
     "npm-run-all": "^4.0.2",
+    "tslint": "^5.0.0",
     "typescript": "^2.2.1"
   }
 }
